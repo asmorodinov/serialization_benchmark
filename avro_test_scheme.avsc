@@ -1,0 +1,42 @@
+{
+  "name": "TestMessage",
+  "type": "record",
+  "namespace": "example.avro",
+  "fields": [
+    {
+      "name": "PackageID",
+      "type": "int"
+    },
+    {
+      "name": "PersonID",
+      "type": "int"
+    },
+    {
+      "name": "Name",
+      "type": "string"
+    },
+    {
+      "name": "Experience",
+      "type": "double"
+    },
+    {
+      "name": "Achievements",
+      "type": {
+        "type": "array",
+        "items": "int"
+      }
+    },
+    {
+      "name": "Inventory",
+	  "type": {
+		"type": "map",
+		"values": "int",
+		"default": {}
+	  }
+    },
+    {
+      "name": "CurrentLocation",
+      "type": "string"
+    }
+  ]
+}

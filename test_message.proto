@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message TestMessage {
+    uint32 PackageID = 1;
+    uint32 PersonID = 2;
+    string Name = 3;
+    double Experience = 4;
+    repeated uint32 Achievements = 5;
+    map<string, uint32> Inventory = 6;
+    string CurrentLocation = 7;
+}
